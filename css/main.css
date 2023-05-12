@@ -1,0 +1,103 @@
+/* rubik-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v26-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/rubik-v26-latin-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v26-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/rubik-v26-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v26-latin-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/rubik-v26-latin-regular.svg#Rubik") format("svg"); /* Legacy iOS */
+}
+/* rubik-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v26-latin-500.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/rubik-v26-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v26-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/rubik-v26-latin-500.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v26-latin-500.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/rubik-v26-latin-500.svg#Rubik") format("svg"); /* Legacy iOS */
+}
+/* rubik-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik-v26-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/rubik-v26-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v26-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/rubik-v26-latin-700.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v26-latin-700.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/rubik-v26-latin-700.svg#Rubik") format("svg"); /* Legacy iOS */
+}
+
+:root {
+  --section-text-color: #fff;
+  --main-bg-color: #fff;
+  --main-text-color: #4F5665;
+}
+
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: 'Rubik';
+  font-weight: 400;
+  background-color: #fff;
+}
+
+ul,ol,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
