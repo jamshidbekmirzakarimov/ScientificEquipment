@@ -41,7 +41,7 @@
 :root {
   --section-text-color: #fff;
   --main-bg-color: #fff;
-  --main-text-color: #4F5665;
+  --main-text-color: #4f5665;
 }
 
 /* GENERAL */
@@ -62,18 +62,20 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-weight: 400;
   background-color: #fff;
 }
 
-ul,ol,li{
+ul,
+ol,
+li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -102,7 +104,44 @@ img {
   padding-left: 20px;
 }
 
-
-.box{
-  
+/* ********** SITE HEADER STYLE START ********* */
+.site-header {
+  padding: 45px 0px 45px 0px;
 }
+
+.site-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header-end {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-list {
+  display: flex;
+  align-items: center;
+}
+.site-nav-item {
+  margin-right: 30px;
+}
+
+.site-nav-link {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #147e45;
+}
+.site-header-address {
+}
+.site-header-select {
+}
+.site-header-option {
+}
+/* ********** SITE HEADER STYLE END ********* */
