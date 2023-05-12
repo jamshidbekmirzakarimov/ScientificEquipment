@@ -42,6 +42,7 @@
   --section-text-color: #fff;
   --main-bg-color: #fff;
   --main-text-color: #4f5665;
+  --active-text-color: #147e45;
 }
 
 /* GENERAL */
@@ -62,7 +63,7 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  font-family: "Rubik";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: #fff;
 }
@@ -97,6 +98,7 @@ img {
 
 /* CONTAINER */
 .container {
+  width: 100%;
   max-width: 1240px;
   margin-right: auto;
   margin-left: auto;
@@ -129,19 +131,32 @@ img {
 }
 
 .site-nav-link {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
+  color: var(--main-text-color);
+}
 
-  color: #147e45;
+.site-nav-link:hover{
+  color: var(--active-text-color);
+  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+
 .site-header-address {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--main-text-color);
+  margin-right: 18px;
 }
+
 .site-header-select {
+  width: 56px;
+  height: 28px;
+  background-color: var(--active-text-color);
+  box-shadow: 0px 4px 20px rgba(13, 77, 42, 0.33);
+  border-radius: 4px;
+  outline: none;
+  color: #fff;
 }
-.site-header-option {
-}
+
+
 /* ********** SITE HEADER STYLE END ********* */
