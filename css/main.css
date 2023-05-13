@@ -472,6 +472,9 @@ img {
 }
 
 @media only screen and (max-width: 790px) {
+  .questions-section {
+    padding-bottom: 100px;
+  }
   .questions-section-wrapper {
     display: flex;
     align-items: center;
@@ -485,6 +488,9 @@ img {
 }
 
 @media only screen and (max-width: 450px) {
+  .questions-section {
+    padding-bottom: 74px;
+  }
   .questions-section-wrapper {
     padding: 29px 20px 31px 20px;
   }
@@ -502,3 +508,87 @@ img {
   }
 }
 /* ******* QUESTION SECTION RESPONSIVE STYLE END ***** */
+
+/* ******* SITE FOOTER STYLE START ******* */
+.site-footer {
+  padding: 40px;
+}
+
+.site-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+/* .site-header-logo-link {
+}
+.site-header-logo {
+} */
+.site-footer-end {
+  display: flex;
+}
+.site-footer-about-list {
+  margin-right: 55px;
+}
+.site-footer-about-item {
+  margin-bottom: 12px;
+}
+.site-footer-about-item:last-child {
+  margin-bottom: 0px;
+}
+.site-footer-about-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0b132a;
+}
+
+.site-footer-contact-item {
+  margin-bottom: 27px;
+}
+.site-footer-contact-item:last-child {
+  margin-bottom: 27px;
+}
+.site-footer-contact-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--main-text-color);
+}
+.site-footer-contact-link:hover {
+  color: var(--active-text-color);
+  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.site-footer-author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--main-text-color);
+}
+/* ******* SITE FOOTER STYLE END ******* */
+
+
+/* ******* SITE FOOTER RESPONSIVE STYLE START ******* */
+@media only screen and (max-width: 900px) {
+  .site-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 65px;
+  }
+  .site-footer-logo-link{
+    margin-bottom: 28px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .site-footer-end{
+    display: flex;
+    flex-direction: column;
+  }
+  .site-footer-about-list {
+    margin-right: 0px;
+    margin-bottom: 28px;
+  }
+}
+/* ******* SITE FOOTER RESPONSIVE STYLE END ******* */
