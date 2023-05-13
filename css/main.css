@@ -39,7 +39,7 @@
 }
 
 :root {
-  --section-text-color: #fff;
+  --section-text-color: #0b132a;
   --main-bg-color: #fff;
   --main-text-color: #4f5665;
   --active-text-color: #147e45;
@@ -137,12 +137,12 @@ img {
   color: var(--main-text-color);
 }
 
-.site-nav-link:hover{
+.site-nav-link:hover {
   color: var(--active-text-color);
   transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.site-header-box{
+.site-header-box {
   display: flex;
   align-items: center;
 }
@@ -166,15 +166,13 @@ img {
   margin-right: 15px;
 }
 
-.site-header-burger{
+.site-header-burger {
   display: none;
   border: none;
   background-color: transparent;
 }
 
-
-
-.menu-burger{
+.menu-burger {
   display: none;
   position: absolute;
   padding: 45px 37px 32px 37px;
@@ -188,26 +186,26 @@ img {
   z-index: 99;
 }
 
-.menu-burger-active{
+.menu-burger-active {
   transform: translateX(0px);
   display: block;
   transition: transform 0.3s cubic-bezier(1, 0.5, 0.28, 0.05);
 }
 
-.close-button{
+.close-button {
   width: 50px;
   margin-left: auto;
   border: none;
   background-color: transparent;
 }
 
-.close-box{
+.close-box {
   width: 32px;
   margin-left: auto;
   margin-bottom: 30px;
 }
 
-.site-nav-list-mobi{
+.site-nav-list-mobi {
   display: flex;
   flex-direction: column;
 }
@@ -215,10 +213,10 @@ img {
 
 /* ******** SITE HEADER RESPONSIVE START ******** */
 @media only screen and (max-width: 850px) {
-  .site-header-box{
+  .site-header-box {
     display: none;
   }
-  .site-header-burger{
+  .site-header-burger {
     display: block;
   }
 
@@ -226,44 +224,99 @@ img {
     margin-right: 0px;
     margin-bottom: 30px;
   }
-  .menu-burger{
+  .menu-burger {
     display: block;
   }
 }
 
 @media only screen and (max-width: 500px) {
-.site-header-logo{
-  width: 206px;
-  height: 24px;
-}
-.menu-burger{
-  display: block;
-}
+  .site-header-logo {
+    width: 206px;
+    height: 24px;
+  }
+  .menu-burger {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 375px) {
-  .site-header-logo{
+  .site-header-logo {
     width: 190px;
     height: 24px;
   }
-  .menu-burger{
+  .menu-burger {
     display: block;
   }
+}
+
+@media only screen and (max-width: 345px) {
+  .site-header-logo {
+    width: 170px;
+    height: 24px;
   }
 
-  @media only screen and (max-width: 345px) {
-    .site-header-logo{
-      width: 170px;
-      height: 24px;
-    }
-
-    .site-header-select{
-      margin-right: 5px;
-      width: 46px;
-      height: 20px;
-    }
-    .menu-burger{
-      display: block;
-    }
-    }
+  .site-header-select {
+    margin-right: 5px;
+    width: 46px;
+    height: 20px;
+  }
+  .menu-burger {
+    display: block;
+  }
+}
 /* ******** SITE HEADER RESPONSIVE END ******** */
+
+/* ******** ABOUTUS SECTION STYLE START ******* */
+.part-section {
+  padding-top: 65px;
+  padding-bottom: 127px;
+}
+
+.part-section-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+
+.part-section-item:last-child {
+  margin-bottom: 0px;
+}
+/* .aboutus-section-img {
+  
+} */
+/* .aboutus-section-title-box {
+
+} */
+.part-section-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 41px;
+  color: var(--section-text-color);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.part-section-subtitle {
+  width: 100%;
+  max-width: 525px;
+  font-size: 17px;
+  line-height: 25px;
+  color: var(--main-text-color);
+  margin: 0;
+}
+
+.contact {
+  order: 1;
+}
+
+.part-section-emailBox {
+  font-size: 17px;
+  line-height: 25px;
+  color: var(--main-text-color);
+}
+.part-section-mailto {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--main-text-color);
+  margin-left: 32px;
+}
+/* ******** ABOUTUS SECTION STYLE END ******* */
