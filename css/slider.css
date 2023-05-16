@@ -1,0 +1,100 @@
+.matapila-section{
+  padding-bottom: 100px;
+}
+
+.matapila-section-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel {
+  width: 334px;
+  position: relative;
+  margin-left: 80px;
+}
+
+/* CONTROLS */
+.btn-arrow {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 14px 44px rgba(14, 20, 34, 0.08);
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.btn-arrow:hover,
+.btn-arrow:active {
+  background-color: #ffffff;
+}
+
+.btn-arrow-left {
+  top: 48%;
+  left: -70px;
+  transform: translate(-50%, -50%);
+}
+
+.btn-arrow-right {
+  top: 48%;
+  right: -70px;
+  transform: translate(50%, -50%);
+}
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/* SLIDES */
+.inner {
+  position: relative;
+  width: 334px;
+  height: 283px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 113px;
+}
+
+.slide {
+  position: absolute;
+  width: 334px;
+  height: 283px;
+  transition: all 0.3s;
+}
+
+/* DOTS */
+.dots {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: #26a561;
+}
+
+.dot--active {
+  width: 30px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #147e45;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
